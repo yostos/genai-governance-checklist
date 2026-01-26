@@ -68,3 +68,4 @@ Items are tagged with source frameworks: `NIST`, `METI`, `JDLA`, `IPA`, `FUJITSU
 - When editing, preserve the checklist formatting and section numbering
 - Maintain the reference framework tags on each item
 - Keep the bibliography section up to date when adding new reference sources
+- **改行ルール**: 日本語の文章は必ず120バイト以内に句読点（。、）などの区切りで改行すること。1行が120バイトを超えないようにする

@@ -22,4 +22,6 @@
 - ✓ 対応済み
 - △ 一部対応（要改善）
 - × 未対応（要検討）
+<!-- textlint-disable ja-spacing/ja-space-between-half-and-full-width -->
 - N/A 該当なし
+<!-- textlint-enable ja-spacing/ja-space-between-half-and-full-width -->

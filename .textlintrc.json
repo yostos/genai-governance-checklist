@@ -8,7 +8,7 @@
   "rules": {
     "preset-ja-spacing": {
       "ja-nakaguro-or-halfwidth-space-between-katakana": true,
-      "ja-no-space-around-parentheses": true,
+      "ja-no-space-around-parentheses": false,
       "ja-no-space-between-full-width": true,
       "ja-space-between-half-and-full-width": true,
       "ja-space-after-exclamation": true,
@@ -30,13 +30,13 @@
         "checkListItem": false,
         "allowExceptionContext": true,
         "ignorePeriodInQuotation": true
+      },
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "である",
+        "preferInBody": "ですます",
+        "preferInList": "である",
+        "strict": false
       }
-    },
-    "no-mix-dearu-desumasu": {
-      "preferInHeader": "である",
-      "preferInBody": "である",
-      "preferInList": "である",
-      "strict": false
     },
     "ja-technical-writing/no-doubled-conjunction": false,
     "ja-technical-writing/no-doubled-conjunctive-particle-ga": false
