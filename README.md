@@ -3,6 +3,8 @@
 ![Status: WIP](https://img.shields.io/badge/status-WIP-yellow)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![Built with mdBook](https://img.shields.io/badge/built_with-mdBook-blue)
+![textlint](https://github.com/yostos/genai-governance-checklist/actions/workflows/textlint.yml/badge.svg)
+![Deploy](https://github.com/yostos/genai-governance-checklist/actions/workflows/deploy.yml/badge.svg)
 
 組織が「生成AI利用ガイドライン」を策定・導入する際に、ガイドラインに必要な項目が網羅されているかを確認するための**メタチェックリスト**です。
 
