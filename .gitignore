@@ -1,0 +1,13 @@
+# mdbook build output
+book/
+
+# mdbook serve temp files
+*~
+
+# Node.js (textlint)
+node_modules/
+
+# Reference documents (third-party, not redistributable)
+references/*.pdf
+references/*.csv
+references/*.json

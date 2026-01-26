@@ -1,0 +1,10 @@
+[book]
+authors = ["Toshiyuki Yoshida"]
+language = "ja"
+src = "src"
+title = "生成AI利用ガイドライン チェックリスト"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "ayu"
+git-repository-url = ""

@@ -1,0 +1,44 @@
+{
+  "filters": {
+    "comments": true,
+    "node-types": {
+      "nodeTypes": ["code", "inline-code", "html", "BlockQuote"]
+    }
+  },
+  "rules": {
+    "preset-ja-spacing": {
+      "ja-nakaguro-or-halfwidth-space-between-katakana": true,
+      "ja-no-space-around-parentheses": true,
+      "ja-no-space-between-full-width": true,
+      "ja-space-between-half-and-full-width": true,
+      "ja-space-after-exclamation": true,
+      "ja-space-after-question": true,
+      "ja-space-around-code": false
+    },
+    "preset-ja-technical-writing": {
+      "sentence-length": { "max": 200 },
+      "no-exclamation-question-mark": {
+        "allowHalfWidthQuestion": true,
+        "allowFullWidthQuestion": true
+      },
+      "ja-no-weak-phrase": false,
+      "max-kanji-continuous-len": { "max": 20 },
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": ["箇条書き", "リスト", "。", "、", "」"],
+        "forceAppendPeriod": false,
+        "checkBlockQuote": false,
+        "checkListItem": false,
+        "allowExceptionContext": true,
+        "ignorePeriodInQuotation": true
+      }
+    },
+    "no-mix-dearu-desumasu": {
+      "preferInHeader": "である",
+      "preferInBody": "である",
+      "preferInList": "である",
+      "strict": false
+    },
+    "ja-technical-writing/no-doubled-conjunction": false,
+    "ja-technical-writing/no-doubled-conjunctive-particle-ga": false
+  }
+}
