@@ -2,7 +2,7 @@
 
 ## Objective
 
-Add **説明** (explanation) and **定義例** (definition example) as child nodes to each checklist item in `generative_ai_guideline_checklist_1.md`.
+Add **説明** (explanation) and **定義例** (definition example) as child nodes to each checklist item in `src/chXX-*.md` files.
 
 Target audience of the checklist: staff at **small organizations without dedicated IT departments** creating their own generative AI usage guidelines. The annotations must be immediately understandable and directly reusable in their own guidelines.
 
@@ -11,10 +11,13 @@ Target audience of the checklist: staff at **small organizations without dedicat
 ## Output Format
 
 ```markdown
-- [ ] Checklist item text [NIST: GOVERN X.X] [METI]
+- X.X.Y. [Level] Checklist item text [NIST: GOVERN X.X] [METI]
   - **説明**: (1-3 sentences in Japanese)
   - **定義例**: 「Concrete wording in Japanese」
 ```
+
+- `X.X.Y` = Section.Subsection.Item (e.g., 1.1.A, 2.3.C)
+- `[Level]` = `[Required]` / `[Recommended]` / `[Option]` (see `src/introduction.md` for definitions)
 
 ### Writing 説明 (Explanation)
 
@@ -84,22 +87,14 @@ These were refined through actual review iterations:
 ## Approved Examples (2 items finalized with user)
 
 ```markdown
-- [ ] 生成AI利用に関する最終責任者（経営層）が明確に定められている [NIST: GOVERN 2.3] [METI]
-  - **説明**: AIで問題が起きたとき誰が最終判断を下すのか、即答できる状態をつくる。責任者が不明確だと、インシデント発生時に判断が宙に浮き、対応の遅れが法的・社会的リスクを組織全体に波及させる。また、名目上の責任者を置くだけでも不十分——実務を担当者に任せきりにし、責任者自身がリスクや運用実態を把握していない体制は「責任者不在」と同義である。
+- 1.1.A. [Required] 生成AI利用に関する最終責任者（経営層）が明確に定められている [NIST: GOVERN 2.3] [METI]
+  - **説明**: AI関連の最終判断を下す責任者は必須。
+    責任者が不明確だと、インシデント発生時に判断が遅れ法的・社会的リスクを組織全体に
+    波及させる。名目上の責任者は意味がない。実務を担当者へ任せきりにし、
+    責任者自身がリスクや運用実態を把握していない体制は「責任者不在」と同義である。
   - **定義例**: 「団体理事長をAI利用の最終責任者とし、利用方針の承認・リスク受容の判断・重大インシデント時の意思決定を自ら行う。定期的に運用状況の報告を受け、方針の妥当性を確認する」
-- [ ] AI利用に関する担当部門・担当者が指定されている [NIST: GOVERN 2.1] [JDLA]
+- 1.1.B. [Required] AI利用に関する担当部門・担当者が指定されている [NIST: GOVERN 2.1] [JDLA]
   - **説明**: 最終責任者の下で、日常のAI利用を実務面で管理する部門・担当者を明確にする。指定がないと、利用上の疑問やトラブルの相談先が不在となり、現場が自己判断で使い続ける"野良AI"状態を招く。
   - **定義例**: 「総務部をAI利用の管理部門とし、担当者○○がツール選定・利用ルールの周知・問い合わせ対応・インシデント一次対応を担う」
 ```
 
----
-
-## Progress
-
-- **Done**: Sections 1–4 complete (75 items)
-  - 1. ガバナンス体制 (GOVERN): 21 items
-  - 2. リスクの特定と評価 (MAP): 21 items
-  - 3. 入力データの管理: 16 items
-  - 4. 出力の管理と利用: 17 items
-- **Next**: Section 5.1 `正確性・信頼性` (5 items)
-- **Total scope**: 180 checklist items across ~40 subsections

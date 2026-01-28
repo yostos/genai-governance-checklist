@@ -15,46 +15,63 @@ This repository contains a **Generative AI Utilization Guideline Checklist** (�
 
 ## Repository Structure
 
-- `generative_ai_guideline_checklist_1.md` — チェックリスト本体（130+チェック項目、10カテゴリ）
-- `references/` — 参照元ガイドライン文書（PDF/CSV/JSON）。詳細は `references/INDEX.md` を参照
-- `references/INDEX.md` — 参照文献の一覧、ファイル対応表、未取得文書のURL
+mdbook プロジェクトとして構成されている。Rust（mdbook）は mise で管理。
 
-## Document Architecture
+```
+src/
+├── introduction.md          # 凡例（参照元・強制力レベル）
+├── ch01-governance.md       # 1. ガバナンス体制 (GOVERN)
+├── ch02-risk-mapping.md     # 2. リスクの特定と評価 (MAP)
+├── ch03-input-data.md       # 3. 入力データの管理
+├── ch04-output-management.md # 4. 出力の管理と利用
+├── ch05-trustworthiness.md  # 5. 信頼性の確保 (Trustworthiness)
+├── ch06-prohibitions.md     # 6. 具体的な禁止事項
+├── ch07-incident-response.md # 7. インシデント対応
+├── ch08-operations.md       # 8. 運用管理
+├── ch09-domain-specific.md  # 9. 特定用途・業界固有の考慮事項
+├── ch10-document-quality.md # 10. 文書としての完成度
+├── tips.md                  # チェックリスト活用のヒント
+├── references.md            # 参考ガイドライン一覧
+├── appendix-decisions.md    # 強制力レベルの判断根拠（付録）
+├── changelog.md             # 更新履歴
+└── SUMMARY.md               # mdbook 目次
+references/                  # 参照元ガイドライン文書（PDF/CSV/JSON）
+references/INDEX.md          # 参照文献の一覧、ファイル対応表
+how-to-work.md               # アノテーション作業の詳細手順
+todo.md                      # 作業進捗管理
+```
 
-The checklist follows the NIST AI RMF structure (GOVERN, MAP, MEASURE, MANAGE) and is organized into these sections:
+## Checklist Item Format
 
-1. **GOVERN** — Governance, organizational structure, policies, training, monitoring
-2. **MAP** — Risk identification, use case classification, third-party vendor evaluation
-3. **Input Data Management** — Prohibited information types, data classification, personal data protection
-4. **Output Management** — Validation, copyright/IP, quality control
-5. **Trustworthiness** — Accuracy, safety, security, transparency, privacy, fairness
-6. **Specific Prohibitions** — Absolute and business-context restrictions
-7. **Incident Response** — Reporting, response processes, documentation
-8. **Operational Management** — Tool management, access control, cost, continuous improvement
-9. **Domain-Specific** — Code generation, documents, data analysis, customer service, industry regulations
-10. **Document Completeness** — Structure quality and implementation feasibility
+各チェック項目は以下の形式で記述する:
 
-## Checklist Status Indicators
+```markdown
+- X.X.Y. [Level] チェック項目テキスト [参照タグ]
+  - **説明**: （1〜3文の日本語）
+  - **定義例**: 「具体的な定義文」
+```
 
-Each item uses this status system:
-- ☐ Unchecked/Unknown
-- ✓ Implemented
-- △ Partially Implemented
-- × Not Implemented
-- N/A Not Applicable
+- `X.X.Y`: セクション番号（例: 1.1.A, 2.3.C）
+- `[Level]`: 強制力レベル（下記参照）
+- `[参照タグ]`: 参照元フレームワーク（末尾に配置）
+
+## Enforcement Levels (強制力レベル)
+
+| 表記 | 意味 |
+| ---- | ---- |
+| **Required** | ガイドラインに必ず記載すべき項目。欠落していると法令違反や重大リスクにつながる |
+| **Recommended** | ガイドラインに記載することを強く推奨する項目。除外する場合はその理由を説明できること |
+| **Option** | 記載があると望ましい項目。組織の規模や業種に応じて検討する |
+
+強制力レベルの判断根拠は `src/appendix-decisions.md` に記録する。新たにレベルを決定した場合は必ず付録も更新すること。
 
 ## Reference Framework Tags
 
-Items are tagged with source frameworks: `NIST`, `METI`, `JDLA`, `IPA`, `FUJITSU`, `EU-AIA`. These indicate alignment with:
+項目の末尾に参照元を以下の略称で付与する: `[NIST]`, `[NIST-GAI]`, `[METI]`, `[JDLA]`, `[IPA]`, `[FUJITSU]`, `[EU-AIA]`
 
 **中心となる米国連邦政府基準:**
 - NIST AI RMF 1.0 (AI Risk Management Framework)
 - NIST AI-600-1 (Generative AI Profile)
-
-**その他の国際基準:**
-- EU AI Act
-- ISO/IEC 42001:2023
-- OECD AI Principles
 
 **日本国内の基準:**
 - 経済産業省・総務省 AI事業者ガイドライン (METI)
@@ -62,10 +79,16 @@ Items are tagged with source frameworks: `NIST`, `METI`, `JDLA`, `IPA`, `FUJITSU
 - IPA テキスト生成AI導入ガイドライン (IPA)
 - 文化庁 AIと著作権に関するガイドライン
 
+**その他の国際基準:**
+- EU AI Act (EU-AIA)
+- ISO/IEC 42001:2023
+- OECD AI Principles
+
 ## Working with This Document
 
 - The document is written entirely in Japanese
-- When editing, preserve the checklist formatting and section numbering
+- When editing, preserve the checklist item format (`X.X.Y. [Level] text [tags]`)
 - Maintain the reference framework tags on each item
 - Keep the bibliography section up to date when adding new reference sources
 - **改行ルール**: 日本語の文章は必ず120バイト以内に句読点（。、）などの区切りで改行すること。1行が120バイトを超えないようにする
+- **アノテーション作業**: 説明・定義例の書き方の詳細ルールは `how-to-work.md` を参照

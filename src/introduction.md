@@ -19,12 +19,12 @@
 | [FUJITSU]  | 富士通「生成AI利活用ガイドライン」                     |
 | [EU-AIA]   | EU AI Act (EU AI規制法)                                |
 
-## チェック凡例
+## 強制力の凡例
 
-- ☐ 未確認
-- ✓ 対応済み
-- △ 一部対応（要改善）
-- × 未対応（要検討）
-<!-- textlint-disable ja-spacing/ja-space-between-half-and-full-width -->
-- N/A 該当なし
-<!-- textlint-enable ja-spacing/ja-space-between-half-and-full-width -->
+各チェック項目の先頭に、以下の3段階の強制力レベルを付与しています。
+
+| 表記 | 意味 |
+| ---- | ---- |
+| **Required** | ガイドラインに必ず記載すべき項目。欠落していると法令違反や重大リスクにつながる |
+| **Recommended** | ガイドラインに記載することを強く推奨する項目。除外する場合はその理由を説明できること |
+| **Option** | 記載があると望ましい項目。組織の規模や業種に応じて検討する |
