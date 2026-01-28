@@ -54,6 +54,18 @@ NIST AI RMF等の国際基準に基づくチェックリストで
 自社でAIモデルを開発・訓練する場面や、
 ソフトウェア開発におけるコード生成の用途は対象外です。
 
+## Excel版チェックリスト
+
+本チェックリストのセルフチェック用Excelファイルを
+用意しています。
+ドロップダウンで対応状況（対応済・一部対応・未対応・該当なし）
+を記入でき、
+サマリーシートで対応率が自動集計されます。
+
+GitHubリポジトリの
+[excel/genai-governance-checklist.xlsx](https://github.com/yostos/genai-governance-checklist/raw/main/excel/genai-governance-checklist.xlsx)
+からダウンロードできます。
+
 ## チェックリストの構成
 
 NIST AI RMFは、AIリスク管理に必要な活動を
