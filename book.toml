@@ -2,7 +2,7 @@
 authors = ["Toshiyuki Yoshida"]
 language = "ja"
 src = "src"
-title = "生成AI利用ガイドライン チェックリスト"
+title = "生成AI利用ガイドライン チェックリスト v1.0.0-rc.1"
 
 [output.html]
 default-theme = "light"

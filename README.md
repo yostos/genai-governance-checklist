@@ -5,6 +5,9 @@
 ![textlint](https://github.com/yostos/genai-governance-checklist/actions/workflows/textlint.yml/badge.svg)
 ![Deploy](https://github.com/yostos/genai-governance-checklist/actions/workflows/deploy.yml/badge.svg)
 
+> **v1.0.0-rc.1（リリース候補版）** - フィードバックを募集しています。
+> ご意見・改善提案は [Issue](https://github.com/yostos/genai-governance-checklist/issues) または [Discussions](https://github.com/yostos/genai-governance-checklist/discussions) へお寄せください。
+
 組織が「生成AI利用ガイドライン」を策定・改訂する際に、必要な項目が網羅されているかを確認するための**メタチェックリスト**です。生成AIの利用ルールそのものではなく、ガイドラインの**過不足を点検する**ためのチェックリストです。
 
 ## 想定読者
