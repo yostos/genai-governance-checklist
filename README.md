@@ -1,6 +1,5 @@
 # 生成AI利用ガイドライン チェックリスト
 
-![Status: WIP](https://img.shields.io/badge/status-WIP-yellow)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![Built with mdBook](https://img.shields.io/badge/built_with-mdBook-blue)
 ![textlint](https://github.com/yostos/genai-governance-checklist/actions/workflows/textlint.yml/badge.svg)
@@ -11,7 +10,7 @@
 ## 想定読者
 
 - 専門のIT部門を持たない**中小規模の組織**で、生成AIの利用ガイドラインを策定・点検する担当者
-- AIやリスク管理の専門知識がなくても、項目を順に確認できるよう各項目に説明と定義例を付しています
+- AIやリスク管理の専門知識がなくても、項目を順に確認できるよう各項目に説明と定義例を付している
 
 ## このチェックリストを使う利点
 
@@ -96,9 +95,9 @@ mdbook serve --open
 │   ├── ch05-trustworthiness.md  # 5. 信頼性の確保
 │   ├── ch06-incident-response.md # 6. インシデント対応
 │   ├── ch07-document-quality.md # 7. ガイドラインとしての完成度
-│   ├── tips.md                  # 活用のヒント
 │   ├── references.md            # 参考ガイドライン一覧
 │   ├── appendix-decisions.md    # 準拠レベルの判断根拠
+│   ├── glossary.md              # 用語集
 │   └── changelog.md             # 更新履歴
 ├── excel/
 │   └── genai-governance-checklist.xlsx  # セルフチェック用Excel

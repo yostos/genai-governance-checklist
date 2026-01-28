@@ -17,4 +17,5 @@
 
 - [参考ガイドライン一覧](references.md)
 - [ガイドライン準拠レベルの判断根拠](appendix-decisions.md)
+- [用語集](glossary.md)
 - [更新履歴](changelog.md)

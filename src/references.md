@@ -22,12 +22,14 @@
 
 ## 日本（政府・公的機関）
 
-| 名称                                 | 発行元                         | 発行日    | URL                                                                                               |
-| ------------------------------------ | ------------------------------ | --------- | ------------------------------------------------------------------------------------------------- |
-| AI事業者ガイドライン（第1.1版）      | 経済産業省・総務省             | 2025年3月 | <https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/>                               |
-| 人間中心のAI社会原則                 | 統合イノベーション戦略推進会議 | 2019年3月 | <https://www8.cao.go.jp/cstp/ai/aiprinciples/index.html>                                            |
-| テキスト生成AI導入・運用ガイドライン | IPA                            | 2024年7月 | <https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2024/textgen-ai-guideline.html> |
-| AIと著作権に関する考え方について     | 文化庁                         | 2024年3月 | <https://www.bunka.go.jp/seisaku/chosakuken/aitotyosakuken.html>                                    |
+| 名称                                                         | 発行元                         | 発行日             | URL                                                                                               |
+| ------------------------------------------------------------ | ------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------- |
+| 人工知能関連技術の研究開発及び活用の推進に関する法律（AI推進法） | 内閣府                         | 令和7年法律第53号（2025年9月全面施行） | <https://laws.e-gov.go.jp/law/507AC0000000053>                                                      |
+| 人工知能基本計画                                             | 内閣府                         | 2025年12月         | <https://www8.cao.go.jp/cstp/ai/ai_plan/ai_plan.html>                                               |
+| AI事業者ガイドライン（第1.1版）                              | 経済産業省・総務省             | 2025年3月          | <https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/>                               |
+| 人間中心のAI社会原則                                         | 統合イノベーション戦略推進会議 | 2019年3月          | <https://www8.cao.go.jp/cstp/ai/aiprinciples/index.html>                                            |
+| テキスト生成AI導入・運用ガイドライン                         | IPA                            | 2024年7月          | <https://www.ipa.go.jp/jinzai/ics/core_human_resource/final_project/2024/textgen-ai-guideline.html> |
+| AIと著作権に関する考え方について                             | 文化庁                         | 2024年3月          | <https://www.bunka.go.jp/seisaku/chosakuken/aitotyosakuken.html>                                    |
 
 ## 日本（民間団体）
 

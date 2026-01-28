@@ -27,15 +27,15 @@ src/
 ├── ch05-trustworthiness.md  # 5. 信頼性の確保 (Trustworthiness)
 ├── ch06-incident-response.md # 6. インシデント対応
 ├── ch07-document-quality.md # 7. ガイドラインとしての完成度
-├── tips.md                  # チェックリスト活用のヒント
 ├── references.md            # 参考ガイドライン一覧
 ├── appendix-decisions.md    # ガイドライン準拠レベルの判断根拠（付録）
 ├── changelog.md             # 更新履歴
 └── SUMMARY.md               # mdbook 目次
 references/                  # 参照元ガイドライン文書（PDF/CSV/JSON）
 references/INDEX.md          # 参照文献の一覧、ファイル対応表
+docs/                        # プロジェクト管理文書
+docs/roadmap.md              # 将来バージョンの対応予定
 how-to-work.md               # アノテーション作業の詳細手順
-todo.md                      # 作業進捗管理
 ```
 
 ## Checklist Item Format
@@ -92,12 +92,13 @@ todo.md                      # 作業進捗管理
 - Keep the bibliography section up to date when adding new reference sources
 - **改行ルール**: 日本語の文章は必ず80バイト以内に句読点（。、）などの区切りで改行すること。1行が80バイトを超えないようにする
 - **アノテーション作業**: 説明・定義例の書き方の詳細ルールは `how-to-work.md` を参照
+- **TODO.md の運用**: `TODO.md` は存在すれば読んで作業の参考にすること。ただし TODO.md の作成・削除のたびに CLAUDE.md を更新する必要はない
 
 ## Current Work Status
 
 **進捗**: 全7章完了（番号・準拠レベル・アノテーション）。
 旧ch06（禁止事項）・旧ch07（運用管理）・旧ch08（特定用途）は全削除・番号繰り上げ済。
-全120項目のチェックリストとして完成。詳細は `todo.md` を参照。
+全120項目のチェックリストとして完成。
 
 ## Workflow for Annotation
 
@@ -107,7 +108,6 @@ todo.md                      # 作業進捗管理
 2. **ch05-\*.md の編集**: 番号・レベル・アノテーション（説明・定義例）を付与
 3. **appendix-decisions.md の更新**: 判断根拠テーブルを追加
 4. **textlint の実行**: 両ファイルをチェックし、エラーがあれば修正
-5. **todo.md の更新**: セクション完了後に進捗テーブルを更新
 
 ## Key Decisions and Context
 

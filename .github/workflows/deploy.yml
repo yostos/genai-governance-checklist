@@ -25,6 +25,9 @@ jobs:
         with:
           mdbook-version: 'latest'
 
+      - name: Install mdbook-toc
+        run: cargo install mdbook-toc
+
       - name: Build
         run: mdbook build
 
