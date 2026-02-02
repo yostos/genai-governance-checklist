@@ -1,0 +1,5 @@
+# サンプルガイドライン本文のみ除外（ですます調の一般向け文書）
+docs/guideline-sample/guideline-sample.md
+
+# MAGI検査ログ（自動生成されたログ文書）
+docs/inspection-log-*.md
