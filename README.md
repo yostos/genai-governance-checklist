@@ -5,8 +5,7 @@
 ![textlint](https://github.com/yostos/genai-governance-checklist/actions/workflows/textlint.yml/badge.svg)
 ![Deploy](https://github.com/yostos/genai-governance-checklist/actions/workflows/deploy.yml/badge.svg)
 
-> **v1.0.0-rc.1（リリース候補版）** - フィードバックを募集しています。
-> ご意見・改善提案は [Issue](https://github.com/yostos/genai-governance-checklist/issues) または [Discussions](https://github.com/yostos/genai-governance-checklist/discussions) へお寄せください。
+📖 **[チェックリストを読む（GitHub Pages）](https://yostos.github.io/genai-governance-checklist/)**
 
 組織が「生成AI利用ガイドライン」を策定・改訂する際に、必要な項目が網羅されているかを確認するための**メタチェックリスト**です。生成AIの利用ルールそのものではなく、ガイドラインの**過不足を点検する**ためのチェックリストです。
 
@@ -52,6 +51,18 @@ NIST AI RMF（AI Risk Management Framework）の4機能（GOVERN・MAP・MEASURE
 セルフチェック用のExcelワークシートを用意しています。ドロップダウンで対応状況を記入でき、サマリーシートで対応率を自動集計します。
 
 **ダウンロード**: [`excel/genai-governance-checklist.xlsx`](excel/genai-governance-checklist.xlsx)
+
+## サンプルガイドライン
+
+チェックリストの Required / Recommended 項目を満たすガイドラインのサンプル文書を用意しています。
+
+📄 **[サンプルを見る](docs/guideline-sample/guideline-sample.md)** | **[HTML版](docs/guideline-sample/guideline-sample.html)**
+
+- **想定組織**: 専門IT部門を持たない中規模組織（職員233名）
+- **想定読者**: ITリテラシーが低い非エンジニアの職員
+- **対応項目**: Required 74項目 + Recommended 19項目
+
+サンプルは参考例です。実際のガイドライン策定時は、自組織の状況に合わせて内容を調整してください。
 
 ## 参照フレームワーク
 
@@ -102,6 +113,11 @@ mdbook serve --open
 │   ├── appendix-decisions.md    # 準拠レベルの判断根拠
 │   ├── glossary.md              # 用語集
 │   └── changelog.md             # 更新履歴
+├── docs/
+│   └── guideline-sample/        # サンプルガイドライン
+│       ├── guideline-sample.md  # 本文（Markdown）
+│       ├── guideline-sample.html # 本文（HTML）
+│       └── organization-profile.md # 想定組織プロファイル
 ├── excel/
 │   └── genai-governance-checklist.xlsx  # セルフチェック用Excel
 ├── tools/
