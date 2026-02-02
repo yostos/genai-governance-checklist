@@ -94,6 +94,51 @@ how-to-work.md               # アノテーション作業の詳細手順
 - **アノテーション作業**: 説明・定義例の書き方の詳細ルールは `how-to-work.md` を参照
 - **TODO.md の運用**: `TODO.md` は存在すれば読んで作業の参考にすること。ただし TODO.md の作成・削除のたびに CLAUDE.md を更新する必要はない
 
+## Git Workflow
+
+**CRITICAL: mainブランチへの直接コミットは禁止**
+
+- mainブランチは保護されており、Pull Requestを経由した変更のみが許可される
+- 修正作業を行う際は、必ず以下の手順を守ること:
+
+### 修正作業の手順
+
+1. **フィーチャーブランチの作成**
+   ```bash
+   git checkout -b feature/description-of-change
+   # または
+   git checkout -b fix/issue-description
+   ```
+
+2. **作業とコミット**
+   - ブランチ上で修正を行う
+   - 適切な粒度でコミットする
+   - コミットメッセージは英語で、Conventional Commitsに従う
+
+3. **プルリクエストの作成**
+   ```bash
+   git push -u origin feature/description-of-change
+   gh pr create --title "タイトル" --body "説明"
+   ```
+
+4. **マージ**
+   - レビュー不要の場合でもPRを経由してマージ
+   - マージ後はローカルのmainを更新
+   ```bash
+   git checkout main
+   git pull origin main
+   git branch -d feature/description-of-change
+   ```
+
+### ブランチ命名規則
+
+- `feature/`: 新機能追加
+- `fix/`: バグ修正
+- `docs/`: ドキュメント更新
+- `chore/`: その他の雑務
+
+**例外**: 緊急のホットフィックスでも、必ずブランチを切ってPRを作成すること。
+
 ## Current Work Status
 
 **進捗**: 全7章完了（番号・準拠レベル・アノテーション）。
