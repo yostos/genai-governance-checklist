@@ -62,7 +62,7 @@ NIST AI RMF（AI Risk Management Framework）の4機能（GOVERN・MAP・MEASURE
 - **想定読者**: ITリテラシーが低い非エンジニアの職員
 - **対応項目**: Required 74項目 + Recommended 19項目
 
-サンプルは参考例です。実際のガイドライン策定時は、自組織の状況に合わせて内容を調整してください。
+サンプルは、IT Governance の基盤が十分でない組織が「まず最低限のルールを整備する」ことを優先した実用重視の内容です。理想的なガイドラインではなく、現実的な出発点として位置づけてください。詳細は [利用上の注意](docs/guideline-sample/README.md#利用上の注意) を参照してください。
 
 ## 参照フレームワーク
 
