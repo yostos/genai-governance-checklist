@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-02-14
+
+### Changed
+- サンプルガイドライン（guideline-sample.md）を改善
+  - 個人情報の削除要求対応について追記（5.6.C）
+  - 目次セクションを明示（7.1.A）
+  - 行政委託事業への生成AI利用禁止規定を追記
+- README.md および docs/guideline-sample/README.md
+  - 生成AIサービス・プラン選定時の確認ポイントを整理
+  - IT Governance の状態に関する注意書きを追記
+  - FAQ 作成の推奨について記載
+  - 日本語表現の統一性を改善
+- todo.md
+  - Phase 1〜3 の完了状況を更新
+  - 対応項目数を整理
+
 ## [1.0.0-rc.1] - 2026-01-29
 
 リリース候補版（Release Candidate）。フィードバックを募集しています。
@@ -38,5 +54,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 日本ディープラーニング協会「生成AIの利用ガイドライン」
 - IPA「テキスト生成AI導入・運用ガイドライン」
 
-[Unreleased]: https://github.com/yostos/genai-governance-checklist/compare/v1.0.0-rc.1...HEAD
+[Unreleased]: https://github.com/yostos/genai-governance-checklist/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/yostos/genai-governance-checklist/compare/v1.0.0-rc.1...v1.0.1
 [1.0.0-rc.1]: https://github.com/yostos/genai-governance-checklist/releases/tag/v1.0.0-rc.1
